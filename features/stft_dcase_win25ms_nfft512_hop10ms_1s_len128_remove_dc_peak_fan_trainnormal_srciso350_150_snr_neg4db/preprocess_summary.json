@@ -1,0 +1,43 @@
+{
+  "dataset": "dcase",
+  "dataset_dir": "E:\\MAE-AST\\CNST\\dataset\\DCASE",
+  "output_dir": "E:\\MAE-AST\\CNST\\features\\stft_dcase_win25ms_nfft512_hop10ms_1s_len128_remove_dc_peak_fan_trainnormal_srciso350_150_snr_neg4db",
+  "split_path": "E:\\MAE-AST\\CNST\\splits\\stft_dcase_win25ms_nfft512_hop10ms_1s_len128_remove_dc_peak_dcase_class_random_train_test_70_30_seed44.json",
+  "assignment_path": "E:\\MAE-AST\\CNST\\features\\stft_dcase_win25ms_nfft512_hop10ms_1s_len128_remove_dc_peak_fan_trainnormal_srciso350_150_snr_neg4db\\fan_noise_assignment.json",
+  "fan_noise_dir": "E:\\MAE-AST\\CNST\\dataset\\fan\\train",
+  "fan_glob": "*source_train_normal*.wav",
+  "fan_noise_file_count": 500,
+  "fan_noise_source_split_path": "E:\\MAE-AST\\CNST\\features\\stft_dcase_win25ms_nfft512_hop10ms_1s_len128_remove_dc_peak_fan_trainnormal_srciso350_150_snr_neg4db\\fan_noise_source_split.json",
+  "noise": {
+    "type": "recorded_dcase2023_fan_train_normal",
+    "scope": "segment",
+    "snr_db": -4.0
+  },
+  "seed": 43,
+  "num_source_files": 200,
+  "processed": 2000,
+  "skipped": 0,
+  "split_excluded": 0,
+  "failed": [],
+  "label_counts": {
+    "anomaly": 1000,
+    "normal": 1000
+  },
+  "feature_shape": [
+    1,
+    128,
+    128
+  ],
+  "sample_rate": 16000,
+  "segment_seconds": 1.0,
+  "segment_samples": 16000,
+  "pre_noise_waveform_norm": "none",
+  "post_noise_waveform_norm": "remove_dc_peak",
+  "stft": {
+    "n_fft": 512,
+    "win_length": 400,
+    "hop_length": 160,
+    "center": true,
+    "feature_time_mode": "resize"
+  }
+}
