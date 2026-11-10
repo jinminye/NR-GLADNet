@@ -10,8 +10,8 @@ This release provides the model implementation, pretrained checkpoints, prepared
 |---|---|
 | `model/nr-gladnet.py` | NR-GLADNet model implementation |
 | `test.py` | Evaluation using a checkpoint, split, and feature directory |
-| `checkpoints/` | 22 checkpoints and their file indexes and checksums |
-| `features/` | 22 prepared feature directories and their indexes and checksums |
+| `checkpoints/` | 22 checkpoints and SHA-256 checksums |
+| `features/` | 22 prepared feature directories and SHA-256 checksums |
 | `splits/` | CUMTB balanced random split and DCASE class random split |
 | `ENVIRONMENT.md` | Tested software versions |
 
@@ -33,7 +33,7 @@ python test.py --split "splits/<split>.json" --weights "checkpoints/<run>/last.p
 
 The script evaluates the split's test list, prints accuracy, macro precision, macro recall, macro F1, and the confusion matrix, and saves a JSON report under `results/`. Use `--device cpu` to select CPU evaluation.
 
-The released CUMTB split is `balanced575_random_train_test`; the released DCASE split is `class_random_train_test`. Archived checkpoint and split mappings are recorded in `checkpoints/REPRODUCTION_CHECK.md` and `checkpoints/REPRODUCTION_CHECK.json`.
+The released CUMTB split is `balanced575_random_train_test`; the released DCASE split is `class_random_train_test`.
 
 ## Data availability
 
