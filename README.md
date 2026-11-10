@@ -1,38 +1,47 @@
 # NR-GLADNet
 
-Official repository for the manuscript:
+Official repository for **Noise-Resilient Global-Local Attentive Dual-Branch Network for Noncontact Acoustic Measurement and Bearing Fault Diagnosis**.
 
-**NR-GLADNet: Noise-Resilient Global-Local Attentive Dual-Branch Network for Acoustic Fault Diagnosis**
+This release provides the model implementation, pretrained checkpoints, prepared STFT features, dataset splits, and an evaluation script for CUMTB and DCASE. It supports inference and testing with saved weights; training scripts are outside the scope of this release.
 
-> Repository status: documentation scaffold only. The source code and reproducibility materials will be added in a subsequent release. No raw datasets, trained models, or experimental outputs are distributed in this initial version.
+## Contents
 
-## Overview
+| Path | Contents |
+|---|---|
+| `model/nr-gladnet.py` | NR-GLADNet model implementation |
+| `test.py` | Evaluation using a checkpoint, split, and feature directory |
+| `checkpoints/` | 22 checkpoints and their file indexes and checksums |
+| `features/` | 22 prepared feature directories and their indexes and checksums |
+| `splits/` | CUMTB balanced random split and DCASE class random split |
+| `ENVIRONMENT.md` | Tested software versions |
 
-NR-GLADNet is a noise-resilient dual-branch network for non-contact acoustic fault diagnosis. The method combines:
+For each dataset, the feature directories cover one clean condition, five Gaussian noise conditions, and five fan interference conditions. CUMTB SNR levels are -8, -6, -4, -2, and 0 dB; DCASE SNR levels are -4, -2, 0, 2, and 4 dB.
 
-- adaptive soft-threshold denoising;
-- a convolutional branch with global attention for local time-frequency features;
-- a Transformer branch with local-global multi-head self-attention for global context;
-- two-stage attentive fusion of local and global representations.
+## Evaluation
 
-This repository will contain the model implementation, preprocessing and split-generation scripts, noise-generation utilities, configuration files, and instructions for reproducing the reported experiments.
+Set up the versions listed in [ENVIRONMENT.md](ENVIRONMENT.md), download the repository, and run:
+
+```bash
+python test.py
+```
+
+The default paths select the DCASE clean checkpoint, features, and split. To evaluate another condition, edit `SPLIT_PATH`, `WEIGHTS_PATH`, and `FEATURE_DIR` at the top of `test.py`, or pass the three paths directly:
+
+```bash
+python test.py --split "splits/<split>.json" --weights "checkpoints/<run>/last.pth" --features "features/<feature_directory>"
+```
+
+The script evaluates the split's test list, prints accuracy, macro precision, macro recall, macro F1, and the confusion matrix, and saves a JSON report under `results/`. Use `--device cpu` to select CPU evaluation.
+
+The released CUMTB split is `balanced575_random_train_test`; the released DCASE split is `class_random_train_test`. Archived checkpoint and split mappings are recorded in `checkpoints/REPRODUCTION_CHECK.md` and `checkpoints/REPRODUCTION_CHECK.json`.
 
 ## Data availability
 
-The DCASE 2023 Task 2 bearing subset used in the study is publicly available from Zenodo:
+This repository distributes prepared features. Raw recordings are not included.
 
-<https://zenodo.org/records/7882613>
+The DCASE 2023 Task 2 bearing subset used in the study is publicly available from [Zenodo](https://zenodo.org/records/7882613).
 
-The CUMTB wind-turbine pitch-bearing dataset is subject to access and redistribution restrictions. The raw CUMTB recordings are therefore not included in this repository. Readers should contact the original data custodians for access, subject to their permission.
-
-## Planned repository contents
-
-- model implementations;
-- training, evaluation, and ablation scripts;
-- acoustic preprocessing and STFT utilities;
-- controlled Gaussian-noise and recorded fan-interference generation scripts;
-- configuration files and environment requirements;
-- reproducibility instructions.
+The CUMTB wind-turbine pitch-bearing dataset is subject to access and redistribution restrictions. Readers should contact the original data custodians for access to the raw recordings, subject to their permission.
 
 ## Citation
 
@@ -40,4 +49,4 @@ Citation information will be added when the associated article is published.
 
 ## License
 
-A software license will be specified when the source-code release is published.
+A software license has not yet been specified.

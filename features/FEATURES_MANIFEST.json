@@ -1,0 +1,391 @@
+{
+  "created_date": "2026-11-09",
+  "source_root": "research/experiments/features",
+  "directory_count": 22,
+  "file_count": 79382,
+  "total_bytes": 5529466621,
+  "entries": [
+    {
+      "dataset": "CUMTB",
+      "condition": "clean",
+      "directory": "stft_cumtb_cond1_1rpm_clean9_win25ms_nfft2048_hop10ms_1s_len128_remove_dc_peak",
+      "files": 5245,
+      "feature_files": 5244,
+      "bytes": 363795792,
+      "sha256_copy_check": "passed_all_files",
+      "test_sample_checks": [
+        {
+          "split_file": "stft_cumtb_cond1_1rpm_clean9_win25ms_nfft2048_hop10ms_1s_len128_remove_dc_peak_cumtb_cumtb_balanced575_random_train_test_70_30_seed44.json",
+          "num_test": 1557,
+          "missing_test_samples": 0
+        },
+        {
+          "split_file": "stft_cumtb_cond1_1rpm_clean9_win25ms_nfft2048_hop10ms_1s_len128_remove_dc_peak_cumtb_cumtb_source_file_holdout_70_30_seed44.json",
+          "num_test": 1537,
+          "missing_test_samples": 0
+        }
+      ]
+    },
+    {
+      "dataset": "CUMTB",
+      "condition": "gaussian",
+      "directory": "stft_cumtb_cond1_1rpm_clean9_win25ms_nfft2048_hop10ms_1s_len128_remove_dc_peak_snr_neg8db",
+      "files": 5245,
+      "feature_files": 5244,
+      "bytes": 364467131,
+      "sha256_copy_check": "passed_all_files",
+      "test_sample_checks": [
+        {
+          "split_file": "stft_cumtb_cond1_1rpm_clean9_win25ms_nfft2048_hop10ms_1s_len128_remove_dc_peak_cumtb_cumtb_balanced575_random_train_test_70_30_seed44.json",
+          "num_test": 1557,
+          "missing_test_samples": 0
+        },
+        {
+          "split_file": "stft_cumtb_cond1_1rpm_clean9_win25ms_nfft2048_hop10ms_1s_len128_remove_dc_peak_cumtb_cumtb_source_file_holdout_70_30_seed44.json",
+          "num_test": 1537,
+          "missing_test_samples": 0
+        }
+      ]
+    },
+    {
+      "dataset": "CUMTB",
+      "condition": "gaussian",
+      "directory": "stft_cumtb_cond1_1rpm_clean9_win25ms_nfft2048_hop10ms_1s_len128_remove_dc_peak_snr_neg6db",
+      "files": 5245,
+      "feature_files": 5244,
+      "bytes": 364467131,
+      "sha256_copy_check": "passed_all_files",
+      "test_sample_checks": [
+        {
+          "split_file": "stft_cumtb_cond1_1rpm_clean9_win25ms_nfft2048_hop10ms_1s_len128_remove_dc_peak_cumtb_cumtb_balanced575_random_train_test_70_30_seed44.json",
+          "num_test": 1557,
+          "missing_test_samples": 0
+        },
+        {
+          "split_file": "stft_cumtb_cond1_1rpm_clean9_win25ms_nfft2048_hop10ms_1s_len128_remove_dc_peak_cumtb_cumtb_source_file_holdout_70_30_seed44.json",
+          "num_test": 1537,
+          "missing_test_samples": 0
+        }
+      ]
+    },
+    {
+      "dataset": "CUMTB",
+      "condition": "gaussian",
+      "directory": "stft_cumtb_cond1_1rpm_clean9_win25ms_nfft2048_hop10ms_1s_len128_remove_dc_peak_snr_neg4db",
+      "files": 5245,
+      "feature_files": 5244,
+      "bytes": 364467796,
+      "sha256_copy_check": "passed_all_files",
+      "test_sample_checks": [
+        {
+          "split_file": "stft_cumtb_cond1_1rpm_clean9_win25ms_nfft2048_hop10ms_1s_len128_remove_dc_peak_cumtb_cumtb_balanced575_random_train_test_70_30_seed44.json",
+          "num_test": 1557,
+          "missing_test_samples": 0
+        },
+        {
+          "split_file": "stft_cumtb_cond1_1rpm_clean9_win25ms_nfft2048_hop10ms_1s_len128_remove_dc_peak_cumtb_cumtb_source_file_holdout_70_30_seed44.json",
+          "num_test": 1537,
+          "missing_test_samples": 0
+        }
+      ]
+    },
+    {
+      "dataset": "CUMTB",
+      "condition": "gaussian",
+      "directory": "stft_cumtb_cond1_1rpm_clean9_win25ms_nfft2048_hop10ms_1s_len128_remove_dc_peak_snr_neg2db",
+      "files": 5245,
+      "feature_files": 5244,
+      "bytes": 364467131,
+      "sha256_copy_check": "passed_all_files",
+      "test_sample_checks": [
+        {
+          "split_file": "stft_cumtb_cond1_1rpm_clean9_win25ms_nfft2048_hop10ms_1s_len128_remove_dc_peak_cumtb_cumtb_balanced575_random_train_test_70_30_seed44.json",
+          "num_test": 1557,
+          "missing_test_samples": 0
+        },
+        {
+          "split_file": "stft_cumtb_cond1_1rpm_clean9_win25ms_nfft2048_hop10ms_1s_len128_remove_dc_peak_cumtb_cumtb_source_file_holdout_70_30_seed44.json",
+          "num_test": 1537,
+          "missing_test_samples": 0
+        }
+      ]
+    },
+    {
+      "dataset": "CUMTB",
+      "condition": "gaussian",
+      "directory": "stft_cumtb_cond1_1rpm_clean9_win25ms_nfft2048_hop10ms_1s_len128_remove_dc_peak_snr_0db",
+      "files": 5245,
+      "feature_files": 5244,
+      "bytes": 364467127,
+      "sha256_copy_check": "passed_all_files",
+      "test_sample_checks": [
+        {
+          "split_file": "stft_cumtb_cond1_1rpm_clean9_win25ms_nfft2048_hop10ms_1s_len128_remove_dc_peak_cumtb_cumtb_balanced575_random_train_test_70_30_seed44.json",
+          "num_test": 1557,
+          "missing_test_samples": 0
+        },
+        {
+          "split_file": "stft_cumtb_cond1_1rpm_clean9_win25ms_nfft2048_hop10ms_1s_len128_remove_dc_peak_cumtb_cumtb_source_file_holdout_70_30_seed44.json",
+          "num_test": 1537,
+          "missing_test_samples": 0
+        }
+      ]
+    },
+    {
+      "dataset": "CUMTB",
+      "condition": "fan",
+      "directory": "stft_cumtb_cond1_1rpm_clean9_win25ms_nfft2048_hop10ms_1s_len128_remove_dc_peak_fan_trainnormal_srciso350_150_snr_neg8db",
+      "files": 5178,
+      "feature_files": 5175,
+      "bytes": 362495446,
+      "sha256_copy_check": "passed_all_files",
+      "test_sample_checks": [
+        {
+          "split_file": "stft_cumtb_cond1_1rpm_clean9_win25ms_nfft2048_hop10ms_1s_len128_remove_dc_peak_cumtb_cumtb_balanced575_random_train_test_70_30_seed44.json",
+          "num_test": 1557,
+          "missing_test_samples": 0
+        }
+      ]
+    },
+    {
+      "dataset": "CUMTB",
+      "condition": "fan",
+      "directory": "stft_cumtb_cond1_1rpm_clean9_win25ms_nfft2048_hop10ms_1s_len128_remove_dc_peak_fan_trainnormal_srciso350_150_snr_neg6db",
+      "files": 5178,
+      "feature_files": 5175,
+      "bytes": 362489356,
+      "sha256_copy_check": "passed_all_files",
+      "test_sample_checks": [
+        {
+          "split_file": "stft_cumtb_cond1_1rpm_clean9_win25ms_nfft2048_hop10ms_1s_len128_remove_dc_peak_cumtb_cumtb_balanced575_random_train_test_70_30_seed44.json",
+          "num_test": 1557,
+          "missing_test_samples": 0
+        }
+      ]
+    },
+    {
+      "dataset": "CUMTB",
+      "condition": "fan",
+      "directory": "stft_cumtb_cond1_1rpm_clean9_win25ms_nfft2048_hop10ms_1s_len128_remove_dc_peak_fan_trainnormal_srciso350_150_snr_neg4db",
+      "files": 5178,
+      "feature_files": 5175,
+      "bytes": 362498835,
+      "sha256_copy_check": "passed_all_files",
+      "test_sample_checks": [
+        {
+          "split_file": "stft_cumtb_cond1_1rpm_clean9_win25ms_nfft2048_hop10ms_1s_len128_remove_dc_peak_cumtb_cumtb_balanced575_random_train_test_70_30_seed44.json",
+          "num_test": 1557,
+          "missing_test_samples": 0
+        }
+      ]
+    },
+    {
+      "dataset": "CUMTB",
+      "condition": "fan",
+      "directory": "stft_cumtb_cond1_1rpm_clean9_win25ms_nfft2048_hop10ms_1s_len128_remove_dc_peak_fan_trainnormal_srciso350_150_snr_neg2db",
+      "files": 5178,
+      "feature_files": 5175,
+      "bytes": 362525920,
+      "sha256_copy_check": "passed_all_files",
+      "test_sample_checks": [
+        {
+          "split_file": "stft_cumtb_cond1_1rpm_clean9_win25ms_nfft2048_hop10ms_1s_len128_remove_dc_peak_cumtb_cumtb_balanced575_random_train_test_70_30_seed44.json",
+          "num_test": 1557,
+          "missing_test_samples": 0
+        }
+      ]
+    },
+    {
+      "dataset": "CUMTB",
+      "condition": "fan",
+      "directory": "stft_cumtb_cond1_1rpm_clean9_win25ms_nfft2048_hop10ms_1s_len128_remove_dc_peak_fan_trainnormal_srciso350_150_snr_0db",
+      "files": 5178,
+      "feature_files": 5175,
+      "bytes": 362494911,
+      "sha256_copy_check": "passed_all_files",
+      "test_sample_checks": [
+        {
+          "split_file": "stft_cumtb_cond1_1rpm_clean9_win25ms_nfft2048_hop10ms_1s_len128_remove_dc_peak_cumtb_cumtb_balanced575_random_train_test_70_30_seed44.json",
+          "num_test": 1557,
+          "missing_test_samples": 0
+        }
+      ]
+    },
+    {
+      "dataset": "DCASE",
+      "condition": "clean",
+      "directory": "stft_dcase_win25ms_nfft512_hop10ms_1s_len128_remove_dc_peak",
+      "files": 2001,
+      "feature_files": 2000,
+      "bytes": 137892472,
+      "sha256_copy_check": "passed_all_files",
+      "test_sample_checks": [
+        {
+          "split_file": "stft_dcase_win25ms_nfft512_hop10ms_1s_len128_remove_dc_peak_dcase_class_random_train_test_70_30_seed44.json",
+          "num_test": 600,
+          "missing_test_samples": 0
+        }
+      ]
+    },
+    {
+      "dataset": "DCASE",
+      "condition": "gaussian",
+      "directory": "stft_dcase_win25ms_nfft512_hop10ms_1s_len128_remove_dc_peak_snr_neg4db",
+      "files": 2001,
+      "feature_files": 2000,
+      "bytes": 138148501,
+      "sha256_copy_check": "passed_all_files",
+      "test_sample_checks": [
+        {
+          "split_file": "stft_dcase_win25ms_nfft512_hop10ms_1s_len128_remove_dc_peak_dcase_class_random_train_test_70_30_seed44.json",
+          "num_test": 600,
+          "missing_test_samples": 0
+        }
+      ]
+    },
+    {
+      "dataset": "DCASE",
+      "condition": "gaussian",
+      "directory": "stft_dcase_win25ms_nfft512_hop10ms_1s_len128_remove_dc_peak_snr_neg2db",
+      "files": 2001,
+      "feature_files": 2000,
+      "bytes": 138148501,
+      "sha256_copy_check": "passed_all_files",
+      "test_sample_checks": [
+        {
+          "split_file": "stft_dcase_win25ms_nfft512_hop10ms_1s_len128_remove_dc_peak_dcase_class_random_train_test_70_30_seed44.json",
+          "num_test": 600,
+          "missing_test_samples": 0
+        }
+      ]
+    },
+    {
+      "dataset": "DCASE",
+      "condition": "gaussian",
+      "directory": "stft_dcase_win25ms_nfft512_hop10ms_1s_len128_remove_dc_peak_snr_0db",
+      "files": 2001,
+      "feature_files": 2000,
+      "bytes": 138148497,
+      "sha256_copy_check": "passed_all_files",
+      "test_sample_checks": [
+        {
+          "split_file": "stft_dcase_win25ms_nfft512_hop10ms_1s_len128_remove_dc_peak_dcase_class_random_train_test_70_30_seed44.json",
+          "num_test": 600,
+          "missing_test_samples": 0
+        }
+      ]
+    },
+    {
+      "dataset": "DCASE",
+      "condition": "gaussian",
+      "directory": "stft_dcase_win25ms_nfft512_hop10ms_1s_len128_remove_dc_peak_snr_2db",
+      "files": 2001,
+      "feature_files": 2000,
+      "bytes": 138148497,
+      "sha256_copy_check": "passed_all_files",
+      "test_sample_checks": [
+        {
+          "split_file": "stft_dcase_win25ms_nfft512_hop10ms_1s_len128_remove_dc_peak_dcase_class_random_train_test_70_30_seed44.json",
+          "num_test": 600,
+          "missing_test_samples": 0
+        }
+      ]
+    },
+    {
+      "dataset": "DCASE",
+      "condition": "gaussian",
+      "directory": "stft_dcase_win25ms_nfft512_hop10ms_1s_len128_remove_dc_peak_snr_4db",
+      "files": 2001,
+      "feature_files": 2000,
+      "bytes": 138148497,
+      "sha256_copy_check": "passed_all_files",
+      "test_sample_checks": [
+        {
+          "split_file": "stft_dcase_win25ms_nfft512_hop10ms_1s_len128_remove_dc_peak_dcase_class_random_train_test_70_30_seed44.json",
+          "num_test": 600,
+          "missing_test_samples": 0
+        }
+      ]
+    },
+    {
+      "dataset": "DCASE",
+      "condition": "fan",
+      "directory": "stft_dcase_win25ms_nfft512_hop10ms_1s_len128_remove_dc_peak_fan_trainnormal_srciso350_150_snr_neg4db",
+      "files": 2004,
+      "feature_files": 2000,
+      "bytes": 141320820,
+      "sha256_copy_check": "passed_all_files",
+      "test_sample_checks": [
+        {
+          "split_file": "stft_dcase_win25ms_nfft512_hop10ms_1s_len128_remove_dc_peak_dcase_class_random_train_test_70_30_seed44.json",
+          "num_test": 600,
+          "missing_test_samples": 0
+        }
+      ]
+    },
+    {
+      "dataset": "DCASE",
+      "condition": "fan",
+      "directory": "stft_dcase_win25ms_nfft512_hop10ms_1s_len128_remove_dc_peak_fan_trainnormal_srciso350_150_snr_neg2db",
+      "files": 2003,
+      "feature_files": 2000,
+      "bytes": 140224335,
+      "sha256_copy_check": "passed_all_files",
+      "test_sample_checks": [
+        {
+          "split_file": "stft_dcase_win25ms_nfft512_hop10ms_1s_len128_remove_dc_peak_dcase_class_random_train_test_70_30_seed44.json",
+          "num_test": 600,
+          "missing_test_samples": 0
+        }
+      ]
+    },
+    {
+      "dataset": "DCASE",
+      "condition": "fan",
+      "directory": "stft_dcase_win25ms_nfft512_hop10ms_1s_len128_remove_dc_peak_fan_trainnormal_srciso350_150_snr_0db",
+      "files": 2003,
+      "feature_files": 2000,
+      "bytes": 140216319,
+      "sha256_copy_check": "passed_all_files",
+      "test_sample_checks": [
+        {
+          "split_file": "stft_dcase_win25ms_nfft512_hop10ms_1s_len128_remove_dc_peak_dcase_class_random_train_test_70_30_seed44.json",
+          "num_test": 600,
+          "missing_test_samples": 0
+        }
+      ]
+    },
+    {
+      "dataset": "DCASE",
+      "condition": "fan",
+      "directory": "stft_dcase_win25ms_nfft512_hop10ms_1s_len128_remove_dc_peak_fan_trainnormal_srciso350_150_snr_2db",
+      "files": 2003,
+      "feature_files": 2000,
+      "bytes": 140212635,
+      "sha256_copy_check": "passed_all_files",
+      "test_sample_checks": [
+        {
+          "split_file": "stft_dcase_win25ms_nfft512_hop10ms_1s_len128_remove_dc_peak_dcase_class_random_train_test_70_30_seed44.json",
+          "num_test": 600,
+          "missing_test_samples": 0
+        }
+      ]
+    },
+    {
+      "dataset": "DCASE",
+      "condition": "fan",
+      "directory": "stft_dcase_win25ms_nfft512_hop10ms_1s_len128_remove_dc_peak_fan_trainnormal_srciso350_150_snr_4db",
+      "files": 2003,
+      "feature_files": 2000,
+      "bytes": 140220971,
+      "sha256_copy_check": "passed_all_files",
+      "test_sample_checks": [
+        {
+          "split_file": "stft_dcase_win25ms_nfft512_hop10ms_1s_len128_remove_dc_peak_dcase_class_random_train_test_70_30_seed44.json",
+          "num_test": 600,
+          "missing_test_samples": 0
+        }
+      ]
+    }
+  ]
+}

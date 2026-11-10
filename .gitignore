@@ -1,0 +1,6 @@
+TESTING.md
+__pycache__/
+*.py[cod]
+*.bak
+*.backup*
+results/
